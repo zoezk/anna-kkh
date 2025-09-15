@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anna Maria Henk - Bewerbung als Kauffrau im Gesundheitswesen bei der KKH"
+    />
+    <title>Anna Maria Henk - Kauffrau im Gesundheitswesen</title>
+
+    <!-- External CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Styles -->
+    <style>
+      :root {
+        --color-primary: #00429d;
+        --color-secondary: #d62a7f;
+        --color-accent-1: #ff7c43;
+        --color-accent-2: #ffa600;
+        --color-success: #006400;
+        --color-text-gray: #555;
+        --color-bg-light: #f7f7f7;
+        --color-bg-blue: #f0f8ff;
+        --color-bg-green: #f0fff0;
+        --color-bg-gray: #f5f5f5;
+        --color-bg-section: #e6f0ff;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: var(--color-bg-light);
+        color: #1a202c;
+        scroll-behavior: smooth;
+        font-size: 18px;
+        line-height: 1.7;
+      }
+
+      .chart-container {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        max-height: 500px;
+      }
+
+      .section-card {
+        background: white;
+        border-radius: 1.5rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        padding: 3rem;
+        margin: 4rem 0;
+      }
+
+      .skill-item {
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        background: rgba(255, 255, 255, 0.5);
+        border-left: 6px solid var(--color-primary);
+      }
+
+      .profile-image {
+        width: 16rem;
+        height: 16rem;
+        border-radius: 50%;
+        margin: 0 auto 1.5rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        border: 6px solid white;
+        object-fit: cover;
+      }
+
+      .icon-card {
+        padding: 2.5rem;
+        border-radius: 0.75rem;
+        text-align: center;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .icon-card:hover {
+        transform: translateY(-2px);
+      }
+
+      .flow-card {
+        padding: 2.5rem;
+        background: white;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 20rem;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .flow-card:hover {
+        transform: scale(1.02);
+      }
+
+      .btn-skip {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 1000;
+        background: var(--color-primary);
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.75rem;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background-color 0.2s;
+      }
+
+      .btn-skip:hover {
+        background: #003580;
+      }
+
+      .icon-large {
+        font-size: 4rem !important;
+      }
+
+      .icon-medium {
+        font-size: 3rem !important;
+      }
+
+      .text-large {
+        font-size: 1.25rem;
+      }
+
+      .text-medium {
+        font-size: 1.125rem;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          font-size: 16px;
+        }
+
+        .section-card {
+          padding: 2rem;
+          margin: 3rem 0;
+        }
+
+        .profile-image {
+          width: 12rem;
+          height: 12rem;
+        }
+
+        .flow-card {
+          width: 100%;
+          max-width: 24rem;
+          padding: 2rem;
+        }
+
+        .icon-card {
+          padding: 2rem;
+        }
+
+        .chart-container {
+          height: 350px;
+        }
+      }
+
+      .focus\:ring-custom:focus {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+      }
+
+      @media print {
+        .btn-skip {
+          display: none;
+        }
+
+        .section-card {
+          break-inside: avoid;
+          box-shadow: none;
+          border: 1px solid #ddd;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="antialiased">
+    <div class="max-w-6xl mx-auto p-6 md:p-10">
+      <!-- Header Section -->
+      <header class="text-center my-16" role="banner">
+        <img
+          src="/WhatsApp-Image-2020-06-08-at-17.13.jpg"
+          alt="Profilbild von Anna Maria Henk"
+          class="profile-image"
+          loading="lazy"
+        />
+        <h1
+          class="text-5xl md:text-6xl font-extrabold"
+          style="color: var(--color-primary)"
+        >
+          Anna Maria Henk
+        </h1>
+        <p class="text-2xl mt-4" style="color: var(--color-text-gray)">
+          <!-- Vergrößert -->
+          Mein Weg zur Kauffrau im Gesundheitswesen
+        </p>
+      </header>
+
+      <main id="main-content" role="main">
+        <!-- Bridge Section -->
+        <section class="section-card" aria-labelledby="bridge-heading">
+          <h2
+            id="bridge-heading"
+            class="text-4xl font-bold text-center mb-6"
+            style="color: var(--color-primary)"
+          >
+            Die Brücke: Vom Einzelhandel zur Gesundheit
+          </h2>
+          <p
+            class="text-center text-gray-600 max-w-4xl mx-auto mb-12 text-large"
+          >
+            Meine Erfahrung als Drogistin bei dm hat mir ein starkes Fundament
+            in der Kundenberatung und Organisation gegeben. Jetzt möchte ich
+            diese Fähigkeiten dort einsetzen, wo sie den größten Unterschied
+            machen: im Gesundheitswesen.
+          </p>
+          <div class="grid md:grid-cols-2 gap-10 text-center">
+            <div
+              class="icon-card"
+              style="background-color: var(--color-bg-blue)"
+              role="img"
+              aria-label="Einzelhandelserfahrung"
+            >
+              <i
+                class="fa-solid fa-cart-shopping icon-large mb-6"
+                style="color: var(--color-primary)"
+                aria-hidden="true"
+              ></i>
+              <h3
+                class="text-2xl font-bold mb-4"
+                style="color: var(--color-primary)"
+              >
+                Erfahrung im Einzelhandel
+              </h3>
+              <p class="text-gray-600 text-large">
+                Direkter Kundenkontakt, individuelle Gesundheitsberatung und
+                tägliche Organisation.
+              </p>
+            </div>
+            <div
+              class="icon-card"
+              style="background-color: var(--color-bg-green)"
+              role="img"
+              aria-label="Zukunft im Gesundheitswesen"
+            >
+              <i
+                class="fa-solid fa-hospital icon-large mb-6"
+                style="color: var(--color-success)"
+                aria-hidden="true"
+              ></i>
+              <h3
+                class="text-2xl font-bold mb-4"
+                style="color: var(--color-success)"
+              >
+                Zukunft im Gesundheitswesen
+              </h3>
+              <p class="text-gray-600 text-large">
+                Patientenkommunikation, sorgfältige Verwaltung und reibungslose
+                Prozesse.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Medical Experience Section -->
+        <section class="section-card" aria-labelledby="experience-heading">
+          <h2
+            id="experience-heading"
+            class="text-4xl font-bold text-center mb-6"
+            style="color: var(--color-primary)"
+          >
+            Meine frühe Erfahrung im medizinischen Bereich
+          </h2>
+          <p
+            class="text-center text-gray-600 max-w-4xl mx-auto mb-12 text-large"
+          >
+            Mein Wunsch, in der Gesundheitsbranche zu arbeiten, ist nicht neu.
+            Ich habe bereits in verschiedenen medizinischen Einrichtungen
+            wertvolle Erfahrungen gesammelt.
+          </p>
+          <div class="grid md:grid-cols-3 gap-10 text-center">
+            <div
+              class="icon-card"
+              style="background-color: var(--color-bg-gray)"
+            >
+              <i
+                class="fa-solid fa-stethoscope icon-large mb-6"
+                style="color: var(--color-primary)"
+                aria-hidden="true"
+              ></i>
+              <h3
+                class="text-xl font-bold mb-4"
+                style="color: var(--color-primary)"
+              >
+                Gynäkologische Praxis
+              </h3>
+              <p class="text-gray-600 text-medium">
+                Administrative Abläufe, Patientenkontakt, Diskretion.
+              </p>
+            </div>
+            <div
+              class="icon-card"
+              style="background-color: var(--color-bg-gray)"
+            >
+              <i
+                class="fa-solid fa-user-doctor icon-large mb-6"
+                style="color: var(--color-primary)"
+                aria-hidden="true"
+              ></i>
+              <h3
+                class="text-xl font-bold mb-4"
+                style="color: var(--color-primary)"
+              >
+                Allgemeinmedizinische Praxis
+              </h3>
+              <p class="text-gray-600 text-medium">
+                Organisatorische Herausforderungen und Patientenbetreuung.
+              </p>
+            </div>
+            <div
+              class="icon-card"
+              style="background-color: var(--color-bg-gray)"
+            >
+              <i
+                class="fa-solid fa-band-aid icon-large mb-6"
+                style="color: var(--color-primary)"
+                aria-hidden="true"
+              ></i>
+              <h3
+                class="text-xl font-bold mb-4"
+                style="color: var(--color-primary)"
+              >
+                Krankenhaus (Geriatrie)
+              </h3>
+              <p class="text-gray-600 text-medium">
+                Empathie und Geduld im Umgang mit älteren Patienten.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Core Skills Section -->
+        <section class="section-card" aria-labelledby="skills-heading">
+          <h2
+            id="skills-heading"
+            class="text-4xl font-bold text-center mb-6"
+            style="color: var(--color-primary)"
+          >
+            Meine Kernkompetenzen
+          </h2>
+          <p
+            class="text-center text-gray-600 max-w-4xl mx-auto mb-12 text-large"
+          >
+            Diese Fähigkeiten habe ich in der Praxis geschärft und stelle sie
+            nun in Ihren Dienst.
+          </p>
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+              <div class="skill-item">
+                <h3
+                  class="text-xl font-semibold mb-3"
+                  style="color: var(--color-secondary)"
+                >
+                  Kommunikation & Empathie
+                </h3>
+                <p class="text-gray-600 text-medium">
+                  Vertrauensbasis aufbauen und auf die Bedürfnisse anderer
+                  eingehen.
+                </p>
+              </div>
+              <div class="skill-item">
+                <h3
+                  class="text-xl font-semibold mb-3"
+                  style="color: var(--color-accent-1)"
+                >
+                  Organisation & Sorgfalt
+                </h3>
+                <p class="text-gray-600 text-medium">
+                  Effizientes und strukturiertes Arbeiten unter allen Umständen.
+                </p>
+              </div>
+              <div class="skill-item">
+                <h3
+                  class="text-xl font-semibold mb-3"
+                  style="color: var(--color-accent-2)"
+                >
+                  Stressresistenz
+                </h3>
+                <p class="text-gray-600 text-medium">
+                  Ruhiges und lösungsorientiertes Handeln in arbeitsintensiven
+                  Phasen.
+                </p>
+              </div>
+            </div>
+            <div class="chart-container">
+              <canvas
+                id="skillsChart"
+                role="img"
+                aria-label="Balkendiagramm der Kernkompetenzen"
+              ></canvas>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skill Transfer Example -->
+        <section class="my-16" aria-labelledby="transfer-heading">
+          <h2
+            id="transfer-heading"
+            class="text-4xl font-bold text-center mb-12"
+            style="color: var(--color-primary)"
+          >
+            Kompetenz in der Praxis: Ein Beispiel
+          </h2>
+          <p
+            class="text-center text-gray-600 max-w-4xl mx-auto mb-12 text-large"
+          >
+            So übertrage ich meine Fähigkeiten vom Einzelhandel ins
+            Gesundheitswesen.
+          </p>
+          <div
+            class="flex flex-col lg:flex-row items-center justify-center gap-12"
+          >
+            <div class="flow-card">
+              <h3
+                class="font-bold mb-6 text-xl"
+                style="color: var(--color-secondary)"
+              >
+                Im Einzelhandel
+                <i class="fa-solid fa-arrow-right ml-2" aria-hidden="true"></i>
+              </h3>
+              <p class="text-gray-600 text-medium">
+                Beratung einer überforderten Kundin zu einem komplexen Produkt.
+              </p>
+            </div>
+            <div
+              class="text-6xl font-bold"
+              style="color: var(--color-accent-2)"
+              aria-hidden="true"
+            >
+              →
+            </div>
+            <div class="flow-card">
+              <h3 class="font-bold mb-6 text-xl" style="color: #2a7fd6">
+                Im Gesundheitswesen
+                <i class="fa-solid fa-check ml-2" aria-hidden="true"></i>
+              </h3>
+              <p class="text-gray-600 text-medium">
+                Empathische Klärung von Abrechnungsfragen eines unsicheren
+                Patienten.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section
+          class="section-card text-center"
+          aria-labelledby="interests-heading"
+        >
+          <h2
+            id="interests-heading"
+            class="text-4xl font-bold mb-6"
+            style="color: var(--color-primary)"
+          >
+            Interessen & Persönlichkeit
+          </h2>
+          <p class="text-gray-600 max-w-4xl mx-auto mb-10 text-large">
+            Meine Hobbys spiegeln meine Persönlichkeit wider: Von logischem
+            Denken beim Gaming und Geduld beim Häkeln bis hin zu Empathie, die
+            ich durch meine Katze erfahren habe.
+          </p>
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-10 items-center justify-center text-center mb-12"
+          >
+            <div class="icon-card">
+              <i
+                class="fa-solid fa-gamepad icon-medium mb-4"
+                style="color: var(--color-accent-1)"
+                aria-hidden="true"
+              ></i>
+              <p class="text-gray-600 text-medium">Gaming</p>
+            </div>
+            <div class="icon-card">
+              <i
+                class="fa-solid fa-book-open icon-medium mb-4"
+                style="color: var(--color-accent-2)"
+                aria-hidden="true"
+              ></i>
+              <p class="text-gray-600 text-medium">Lesen</p>
+            </div>
+            <div class="icon-card">
+              <i
+                class="fa-solid fa-lightbulb icon-medium mb-4"
+                style="color: var(--color-secondary)"
+                aria-hidden="true"
+              ></i>
+              <p class="text-gray-600 text-medium">Häkeln</p>
+            </div>
+            <div class="icon-card">
+              <i
+                class="fa-solid fa-cat icon-medium mb-4"
+                style="color: var(--color-primary)"
+                aria-hidden="true"
+              ></i>
+              <p class="text-gray-600 text-medium">Katzen</p>
+            </div>
+          </div>
+          <img
+            src="/IMG_20200809_191410.jpg"
+            alt="Eine orange-weiße Katze beim Schlafen"
+            class="w-80 rounded-full mx-auto shadow-md"
+            loading="lazy"
+          />
+        </section>
+
+        <!-- Why KKH Section -->
+        <section class="section-card text-center" aria-labelledby="kkh-heading">
+          <h2
+            id="kkh-heading"
+            class="text-4xl font-bold mb-6"
+            style="color: var(--color-primary)"
+          >
+            Warum gerade die KKH?
+          </h2>
+          <p class="text-gray-600 max-w-4xl mx-auto mb-12 text-large">
+            Ihre Mission und Werte passen perfekt zu meinen Zielen.
+          </p>
+          <div class="grid md:grid-cols-3 gap-10 text-center">
+            <div
+              class="icon-card"
+              style="background-color: var(--color-bg-section)"
+            >
+              <i
+                class="fa-solid fa-handshake icon-large mb-6"
+                style="color: var(--color-primary)"
+                aria-hidden="true"
+              ></i>
+              <h3
+                class="text-xl font-bold mb-4"
+                style="color: var(--color-primary)"
+              >
+                Sozialer Auftrag
+              </h3>
+              <p class="text-gray-600 text-medium">
+                Ein Teil des Sozialsystems zu sein, liegt mir am Herzen.
+              </p>
+            </div>
+            <div
+              class="icon-card"
+              style="background-color: var(--color-bg-section)"
+            >
+              <i
+                class="fa-solid fa-lightbulb icon-large mb-6"
+                style="color: var(--color-primary)"
+                aria-hidden="true"
+              ></i>
+              <h3
+                class="text-xl font-bold mb-4"
+                style="color: var(--color-primary)"
+              >
+                Innovation & Prävention
+              </h3>
+              <p class="text-gray-600 text-medium">
+                Ihr Fokus auf Gesundheitsförderung und moderne Ansätze überzeugt
+                mich.
+              </p>
+            </div>
+            <div
+              class="icon-card"
+              style="background-color: var(--color-bg-section)"
+            >
+              <i
+                class="fa-solid fa-briefcase icon-large mb-6"
+                style="color: var(--color-primary)"
+                aria-hidden="true"
+              ></i>
+              <h3
+                class="text-xl font-bold mb-4"
+                style="color: var(--color-primary)"
+              >
+                Spezialisierung
+              </h3>
+              <p class="text-gray-600 text-medium">
+                Ihre kaufmännische Ausrichtung ist die ideale Brücke für mich.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer
+        class="section-card text-center"
+        role="contentinfo"
+        aria-labelledby="conclusion-heading"
+      >
+        <h2
+          id="conclusion-heading"
+          class="text-3xl font-bold mb-4"
+          style="color: var(--color-primary)"
+        >
+          🎯 Warum ich die richtige Kandidatin bin
+        </h2>
+        <p class="text-gray-600 max-w-3xl mx-auto text-large">
+          Ich möchte mein aktuelles kaufmännisches Wissen mit meinem
+          medizinischen Interesse vereinen, um meinen Traum, im Gesundheitswesen
+          zu arbeiten, zu verwirklichen. Ich bin davon überzeugt, dass diese
+          Kombination mich zu einer wertvollen Ergänzung für Ihr Team macht.
+          Vielen Dank für Ihre Zeit und Aufmerksamkeit.
+        </p>
+      </footer>
+    </div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Chart Configuration -->
+    <script>
+      // Chart configuration in separate object for better maintainability
+      const chartConfig = {
+        type: "bar",
+        data: {
+          labels: [
+            ["Kommunikation", "& Empathie"],
+            "Organisation & Sorgfalt",
+            "Stressresistenz",
+          ],
+          datasets: [
+            {
+              label: "Kompetenzniveau",
+              data: [95, 90, 85],
+              backgroundColor: ["#d62a7f", "#ff7c43", "#ffa600"],
+              borderColor: ["#d62a7f", "#ff7c43", "#ffa600"],
+              borderWidth: 0,
+            },
+          ],
+        },
+        options: {
+          indexAxis: "y",
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              beginAtZero: true,
+              max: 100,
+              grid: { display: false, drawBorder: false },
+              ticks: { display: false },
+              border: { display: false },
+            },
+            y: {
+              grid: { display: false, drawBorder: false },
+              ticks: {
+                font: {
+                  size: 16,
+                  weight: "bold",
+                  family: "Inter, sans-serif",
+                },
+                color: "#333",
+              },
+              border: { display: false },
+            },
+          },
+          plugins: {
+            legend: { display: false },
+            tooltip: { enabled: false },
+          },
+        },
+      };
+
+      // Initialize chart when DOM is loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        const skillsChartElement = document.getElementById("skillsChart");
+        if (skillsChartElement) {
+          const skillsChartCtx = skillsChartElement.getContext("2d");
+          new Chart(skillsChartCtx, chartConfig);
+        }
+      });
+    </script>
+  </body>
+</html>
