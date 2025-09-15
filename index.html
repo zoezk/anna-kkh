@@ -103,7 +103,7 @@
         border-radius: 0.75rem;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         text-align: center;
-        width: 20rem;
+        width: 24rem; /* Vergrößert von 20rem für mehr Platz */
         transition: transform 0.2s ease-in-out;
       }
 
@@ -162,7 +162,7 @@
 
         .flow-card {
           width: 100%;
-          max-width: 24rem;
+          max-width: 28rem; /* Vergrößert von 24rem für Mobile */
           padding: 2rem;
         }
 
@@ -440,9 +440,9 @@
           <div
             class="flex flex-col lg:flex-row items-center justify-center gap-12"
           >
-            <div class="flow-card">
+            <div class="flow-card text-center">
               <h3
-                class="font-bold mb-6 text-xl"
+                class="font-bold mb-6 text-xl flex items-center justify-center"
                 style="color: var(--color-secondary)"
               >
                 Im Einzelhandel
@@ -459,8 +459,11 @@
             >
               →
             </div>
-            <div class="flow-card">
-              <h3 class="font-bold mb-6 text-xl" style="color: #2a7fd6">
+            <div class="flow-card text-center">
+              <h3
+                class="font-bold mb-6 text-xl flex items-center justify-center"
+                style="color: #2a7fd6"
+              >
                 Im Gesundheitswesen
                 <i class="fa-solid fa-check ml-2" aria-hidden="true"></i>
               </h3>
