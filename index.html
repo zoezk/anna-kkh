@@ -103,7 +103,7 @@
         border-radius: 0.75rem;
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         text-align: center;
-        width: 24rem; /* Vergrößert von 20rem für mehr Platz */
+        width: 24rem;
         transition: transform 0.2s ease-in-out;
       }
 
@@ -162,7 +162,7 @@
 
         .flow-card {
           width: 100%;
-          max-width: 28rem; /* Vergrößert von 24rem für Mobile */
+          max-width: 28rem;
           padding: 2rem;
         }
 
@@ -171,7 +171,10 @@
         }
 
         .chart-container {
-          height: 350px;
+          height: 250px; /* Reduziert von 350px für bessere Mobilansicht */
+        }
+        .grid.lg\:grid-cols-2 {
+          gap: 8; /* Reduziert Gap für mehr Platz */
         }
       }
 
@@ -211,7 +214,6 @@
           Anna Maria Henk
         </h1>
         <p class="text-2xl mt-4" style="color: var(--color-text-gray)">
-          <!-- Vergrößert -->
           Mein Weg zur Kauffrau im Gesundheitswesen
         </p>
       </header>
@@ -224,15 +226,16 @@
             class="text-4xl font-bold text-center mb-6"
             style="color: var(--color-primary)"
           >
-            Die Brücke: Vom Einzelhandel zur Gesundheit
+            Die Brücke: Von der Drogistin zur Kauffrau im Gesundheitswesen
           </h2>
           <p
             class="text-center text-gray-600 max-w-4xl mx-auto mb-12 text-large"
           >
             Meine Erfahrung als Drogistin bei dm hat mir ein starkes Fundament
             in der Kundenberatung und Organisation gegeben. Jetzt möchte ich
-            diese Fähigkeiten dort einsetzen, wo sie den größten Unterschied
-            machen: im Gesundheitswesen.
+            diese Fähigkeiten im Gesundheitswesen einsetzen, wo mein
+            kaufmännisches Wissen und mein Interesse an Medizin von Vorteil sein
+            werden.
           </p>
           <div class="grid md:grid-cols-2 gap-10 text-center">
             <div
@@ -247,15 +250,16 @@
                 aria-hidden="true"
               ></i>
               <h3
-                class="text-2xl font-bold mb-4"
+                class="text-2xl font-bold mb-4 text-left"
                 style="color: var(--color-primary)"
               >
                 Erfahrung im Einzelhandel
               </h3>
-              <p class="text-gray-600 text-large">
-                Direkter Kundenkontakt, individuelle Gesundheitsberatung und
-                tägliche Organisation.
-              </p>
+              <ul class="text-gray-600 text-large list-disc text-left">
+                <li>Direkter Kundenkontakt</li>
+                <li>individuelle Beratung</li>
+                <li>betriebswirtschaftliche Kenntnisse</li>
+              </ul>
             </div>
             <div
               class="icon-card"
@@ -269,15 +273,16 @@
                 aria-hidden="true"
               ></i>
               <h3
-                class="text-2xl font-bold mb-4"
+                class="text-2xl font-bold mb-4 text-left"
                 style="color: var(--color-success)"
               >
                 Zukunft im Gesundheitswesen
               </h3>
-              <p class="text-gray-600 text-large">
-                Patientenkommunikation, sorgfältige Verwaltung und reibungslose
-                Prozesse.
-              </p>
+              <ul class="text-gray-600 text-large list-disc text-left">
+                <li>Patientenkommunikation</li>
+                <li>Beratung von Patienten</li>
+                <li>kaufmännische Ausbildung</li>
+              </ul>
             </div>
           </div>
         </section>
@@ -289,16 +294,16 @@
             class="text-4xl font-bold text-center mb-6"
             style="color: var(--color-primary)"
           >
-            Meine frühe Erfahrung im medizinischen Bereich
+            Meine Erfahrung im medizinischen Bereich
           </h2>
           <p
             class="text-center text-gray-600 max-w-4xl mx-auto mb-12 text-large"
           >
             Mein Wunsch, in der Gesundheitsbranche zu arbeiten, ist nicht neu.
             Ich habe bereits in verschiedenen medizinischen Einrichtungen
-            wertvolle Erfahrungen gesammelt.
+            Erfahrungen gesammelt.
           </p>
-          <div class="grid md:grid-cols-3 gap-10 text-center">
+          <div class="grid md:grid-cols-2 gap-10 text-center">
             <div
               class="icon-card"
               style="background-color: var(--color-bg-gray)"
@@ -309,33 +314,16 @@
                 aria-hidden="true"
               ></i>
               <h3
-                class="text-xl font-bold mb-4"
+                class="text-xl font-bold mb-4 text-left"
                 style="color: var(--color-primary)"
               >
-                Gynäkologische Praxis
+                Gynäkologische Praxis & Allgemeinmedizinische Praxis
               </h3>
-              <p class="text-gray-600 text-medium">
-                Administrative Abläufe, Patientenkontakt, Diskretion.
-              </p>
-            </div>
-            <div
-              class="icon-card"
-              style="background-color: var(--color-bg-gray)"
-            >
-              <i
-                class="fa-solid fa-user-doctor icon-large mb-6"
-                style="color: var(--color-primary)"
-                aria-hidden="true"
-              ></i>
-              <h3
-                class="text-xl font-bold mb-4"
-                style="color: var(--color-primary)"
-              >
-                Allgemeinmedizinische Praxis
-              </h3>
-              <p class="text-gray-600 text-medium">
-                Organisatorische Herausforderungen und Patientenbetreuung.
-              </p>
+              <ul class="text-gray-600 text-medium text-left list-disc">
+                <li>Organisatorische Abläufe</li>
+                <li>Patientenakten organisieren</li>
+                <li>Diskretion bei der Patientenbetreuung</li>
+              </ul>
             </div>
             <div
               class="icon-card"
@@ -347,14 +335,16 @@
                 aria-hidden="true"
               ></i>
               <h3
-                class="text-xl font-bold mb-4"
+                class="text-xl font-bold mb-4 text-left"
                 style="color: var(--color-primary)"
               >
-                Krankenhaus (Geriatrie)
+                Krankenhaus <br />(Geriatrie)
               </h3>
-              <p class="text-gray-600 text-medium">
-                Empathie und Geduld im Umgang mit älteren Patienten.
-              </p>
+              <ul class="text-gray-600 text-medium text-left list-disc">
+                <li>Versorgung der Patienten</li>
+                <li>Geduld im Umgang mit älteren Menschen</li>
+                <li>Unterstützung des Pflegepersonals</li>
+              </ul>
             </div>
           </div>
         </section>
@@ -371,8 +361,8 @@
           <p
             class="text-center text-gray-600 max-w-4xl mx-auto mb-12 text-large"
           >
-            Diese Fähigkeiten habe ich in der Praxis geschärft und stelle sie
-            nun in Ihren Dienst.
+            Ich habe diese Fähigkeiten in der Praxis gesammelt und würde sie
+            gerne bei Ihnen einbringen.
           </p>
           <div class="grid lg:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
@@ -381,11 +371,11 @@
                   class="text-xl font-semibold mb-3"
                   style="color: var(--color-secondary)"
                 >
-                  Kommunikation & Empathie
+                  Kommunikation, Empathie & Teamarbeit
                 </h3>
                 <p class="text-gray-600 text-medium">
-                  Vertrauensbasis aufbauen und auf die Bedürfnisse anderer
-                  eingehen.
+                  Ich gehe gezielt auf die Bedürfnisse anderer ein und arbeite
+                  engagiert und konstruktiv im Team zusammen.
                 </p>
               </div>
               <div class="skill-item">
@@ -528,12 +518,14 @@
               <p class="text-gray-600 text-medium">Katzen</p>
             </div>
           </div>
-          <img
-            src="IMG_20200809_191410.jpg"
-            alt="Eine orange-weiße Katze beim Schlafen"
-            class="w-80 rounded-full mx-auto shadow-md"
-            loading="lazy"
-          />
+          <div class="w-80 rounded-full mx-auto shadow-md overflow-hidden">
+            <img
+              src="IMG_20200809_191410.jpg"
+              alt="Eine orange-weiße Katze beim Schlafen"
+              class="w-full h-full object-cover transform scale-110"
+              loading="lazy"
+            />
+          </div>
         </section>
 
         <!-- Why KKH Section -->
@@ -548,7 +540,7 @@
           <p class="text-gray-600 max-w-4xl mx-auto mb-12 text-large">
             Ihre Mission und Werte passen perfekt zu meinen Zielen.
           </p>
-          <div class="grid md:grid-cols-3 gap-10 text-center">
+          <div class="grid lg:grid-cols-3 gap-10 text-center">
             <div
               class="icon-card"
               style="background-color: var(--color-bg-section)"
@@ -674,7 +666,7 @@
               grid: { display: false, drawBorder: false },
               ticks: {
                 font: {
-                  size: 16,
+                  size: 14, // Reduziert von 16 für kompakteres Layout
                   weight: "bold",
                   family: "Inter, sans-serif",
                 },
